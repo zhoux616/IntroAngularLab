@@ -10,11 +10,23 @@
     <body>
         <h1>Angular</h1>
         <img src="./images/throh.png">
+        <div ng-app="" ng-controller="personController">
+        <h2>Enter Your Name Here</h2>
+            First Name: <input type="text" ng-model="person.firstName"><br>
+            Last Name: <input type="text" ng-model="person.lastName"><br>
+            <p>
+                <button ng_click="save()">Save</button>
+                <button ng-click="clear()">Clear</button>
+            </p>
+            <p>Full Name: {{person.firstName + " " + person.lastName}}</p>
+
+        </div>
     </body>
     <script>
         var Wordlist = require("./wordlist");
         var wordlist1 = new Wordlist();
         wordlist1.add("bird");
         console.log(wordlist1);
+
     </script>
 </html>
