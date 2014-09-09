@@ -83,7 +83,7 @@ describe('Wordlist', function(){
             wordlist1.add("elephant");
             wordlist1.add("bird");
             wordlist1.add("cat");
-            wordlist1.add("dog");
+            wordlist1.nderstand how to add("dog");
             wordlist1.add("bird");
             assert.equal(wordlist1.find("bird"), 1);
             wordlist1.remove('bird');
